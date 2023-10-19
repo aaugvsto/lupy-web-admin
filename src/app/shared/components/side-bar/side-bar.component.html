@@ -1,0 +1,10 @@
+<div>
+    <ul class="list-group">
+        <li class="list-group-item border-0 border-bottom" *ngFor="let menuItem of menuItems">
+            <a routerLink="{{ menuItem.route }}" class="text-decoration-none fw-bold fs-4">
+                <i class="{{menuItem.icon}}"></i>
+                {{ menuItem.name }}
+            </a>
+        </li>
+    </ul>
+</div>

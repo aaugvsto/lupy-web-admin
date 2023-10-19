@@ -1,0 +1,30 @@
+<!-- FILEPATH: /C:/www/dev/Projects/Personal/Lupy/web/admin/src/app/pages/login/login.component.html -->
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card w-25">
+        <div class="card-body">
+            <h5 class="card-title">Login</h5>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+                <div class="form-group mb-3">
+                    <label for="username">User:</label>
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    id="username" 
+                    formControlName="login"
+                    >
+                </div>
+                <div class="form-group mb-3">
+                    <label for="password">Password:</label>
+                    <input 
+                    type="password"
+                    class="form-control" 
+                    id="password" 
+                    formControlName="password"
+                    >
+                </div>
+                <button type="submit" class="btn btn-primary form-control fw-bold">Entrar <i class="fa-solid fa-right-to-bracket"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
