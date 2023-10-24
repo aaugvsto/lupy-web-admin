@@ -10,7 +10,17 @@ export class SideBarComponent {
     {
       name: 'Dashboard',
       icon: 'fa fa-dashboard',
-      route: '/dashboard'
+      route: '/dashboard',
+    },
+    {
+      name: 'Clinícas',
+      icon: 'fa fa-clinic-medical',
+      route: '/clinicas',
+    },
+    {
+      name: 'Usuários',
+      icon: 'fa fa-users',
+      route: '/usuarios',
     }
   ]
 }

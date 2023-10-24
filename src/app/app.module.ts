@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FramePageComponent } from './pages/frame-page/frame-page.component';
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
 import { SideBarComponent } from './shared/components/side-bar/side-bar.component';
+import { ClinicasModule } from './pages/clinicas/clinicas.module';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,13 @@ import { SideBarComponent } from './shared/components/side-bar/side-bar.componen
     LoginComponent,
     FramePageComponent,
     DashboardPageComponent,
-    SideBarComponent
+    SideBarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ClinicasModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 <div>
     <ul class="list-group">
         <li class="list-group-item border-0 border-bottom" *ngFor="let menuItem of menuItems">
-            <a routerLink="{{ menuItem.route }}" class="text-decoration-none fw-bold fs-4">
+            <a routerLink="{{ menuItem.route }}" class="text-decoration-none fw-bold fs-6" style="color: darkcyan;">
                 <i class="{{menuItem.icon}}"></i>
                 {{ menuItem.name }}
             </a>
